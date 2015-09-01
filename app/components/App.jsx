@@ -28,21 +28,6 @@ export default React.createClass({
   },
 
   render() {
-    const handle =
-      <Button
-        iconProps={{
-          file: require('reapp-ui/assets/icons/hamburger.svg'),
-          stroke: 1,
-          size: 24,
-          animations: false
-        }}
-        chromeless />
-
-    const menu =
-      <Menu>
-        <Link style={{color: '#fff'}} to="kitchen">Kitchen Sink</Link>
-      </Menu>
-
     return (
       <Theme {...iOSTheme}>
           <RouteHandler {...this.props}
@@ -53,8 +38,3 @@ export default React.createClass({
     );
   }
 });
-
-// <LayoutLeftNav
-//   side={menu}
-//   handle={handle}
-//   draggable={false}>
